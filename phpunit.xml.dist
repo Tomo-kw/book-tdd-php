@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<phpunit
+    colors="true"
+    cacheResult="false"
+>
+    <testsuites>
+        <testsuite name="Money">
+            <directory>./tests/Money</directory>
+        </testsuite>
+        <testsuite name="xUnit">
+            <directory>./tests/Xunit</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

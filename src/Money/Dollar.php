@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Money;
 final class Dollar
 {
-    public int $amount;
-
-    public function __construct(int $amount)
+    public function __construct(
+        private int $amount
+    )
     {
-        $this->amount = $amount;
     }
 
     public function times(int $multiplier)

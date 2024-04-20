@@ -19,6 +19,6 @@ final class Dollar
 
     public function equals(Dollar $object): bool
     {
-        return true;
+        return $this->amount === $object->amount;
     }
 }

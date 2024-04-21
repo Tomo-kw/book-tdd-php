@@ -3,14 +3,9 @@
 declare(strict_types=1);
 
 namespace Money;
-final class Dollar
-{
-    public function __construct(
-        private int $amount
-    )
-    {
-    }
 
+final class Dollar extends Money
+{
     public function times(int $multiplier)
     {
         return new Dollar($this->amount * $multiplier);

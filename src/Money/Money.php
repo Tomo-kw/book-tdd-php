@@ -9,4 +9,9 @@ class Money
     )
     {
     }
+
+    public function equals(Money $object): bool
+    {
+        return $this->amount === $object->amount;
+    }
 }
